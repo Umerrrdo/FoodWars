@@ -3,17 +3,18 @@ import 'tailwindcss/tailwind.css';
 
 export default function Nav() {
     return (
-        <nav className='flex flex-row justify-between w-full'>
-            <div className="logo ">
-                <img className='h-20 p-2 relative left-4 rounded-lg' src={logo} alt="Food Wars" />
+        <nav className='bg-black flex flex-row text-white justify-between'>
+            <div className='flex flex-row text-xl font-bold font-sans p-4'>
+                <h1>Food Wars</h1>
             </div>
-            <div >
-                <ul className='flex flex-row relative top-5 text-base'>
-                    <a href="#"><li className='px-4'>Home</li></a>
-                    <a href="#"><li className='px-4'>Our Deals</li></a>
-                    <a href="#"><li className='px-4'>About</li></a>
-                    <a href="#"><li className='px-4'>Contact</li></a>
-                </ul>
+            <div className="nav-options relative top-4">
+                   <a className='px-4 text-base font-medium' href="#">Blog</a>
+                   <a className='px-4 text-base font-medium' href="#">Contact</a>
+                   <a className='px-4 text-base font-medium' href="#">About</a>
+            </div>
+            <div className='sign-up'>
+                <a href="#">Sign up</a>
+                <a href="#">Log in</a>
             </div>
         </nav>
     );
