@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+
 import 'tailwindcss/tailwind.css';
 
 export default function Nav() {
